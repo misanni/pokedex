@@ -18,19 +18,15 @@
 <body>
     <h1>Pokedex</h1>
 
-    <ul>
+    
         <% for(let i = 0; i < allpokemon.length; i++) { %>
-            <li style="list-style-type: none;">
-                <a href="/pokemon/<%=i%>"><%=allpokemon[i].name %></a>
-            </li>
+            
+              <img src='<%=allpokemon[i].img %>' alt =“” height="150px" width="150px">
+              <a href='/Pokemon/<%=i%'> <img src='<%=allpokemon[i].img %>' alt =“”> </a>
+            
         <% } %>
-    </ul>
+  
 
-    <style type="text/css">
-        body {
-          color: blanchedalmond;
-          background-color: steelblue;
-        }
-      </style>
+    
 </body>
 </html>
