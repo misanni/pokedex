@@ -18,11 +18,12 @@
 <body>
     <h1>Pokedex</h1>
 
-    
+    <button><a href="/pokemons/new">Add New Pokemon</a></button>
+  
+
         <% for(let i = 0; i < allpokemon.length; i++) { %>
             
-              <img src='<%=allpokemon[i].img %>' alt =“” height="150px" width="150px">
-              <a href='/Pokemon/<%=i%'> <img src='<%=allpokemon[i].img %>' alt =“”> </a>
+            <a href='/Pokemon/<%=i%>'> <img src='<%=allpokemon[i].img %>' alt =“” height="150px" width="150px"></a>
             
         <% } %>
   

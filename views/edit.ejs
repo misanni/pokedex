@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1> Pokedex Entry-Bulbasaur</h1>
+    <form action="/Pokemon/<%=i%>?_method=PUT" method="POST">
+        <input type="number"required name="id" value="<%=pokemonid %>"><input type="text"placeholder="text"required name="name" value="<%=pokemonname %>"><input type="text"required name="type" value="<%=pokemontype %>">
+        <input type="url"required name="img" value="<%=pokemonimg %>">
+        <button type=“submit”>Edit Pokemon </button>
+        </form>
+</body>
+</html>

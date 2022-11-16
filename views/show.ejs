@@ -20,11 +20,16 @@
     <br>
   
    
+    <button><a href="/pokemon">Return to Pokedex Entries</a></button>
+    <img src='<%=pokemonimg %>' alt=“pokemonimg”> <h3><%=pokemontype %> </h3>
     
-    <img src='<%=allpokemon[i].img %>' alt =“” name='<%=allpokemon[i].name %>' type='<%=allpokemon[i].type %>'
-   <h3><%= pokemontype %> </h3>
-    
+   
+     
+     <form action="/pokemon/<%=i; %>?_method=DELETE" method="POST">
+      <input type="submit" value="DELETE" />   
 
-    
+    </form>
+    <a href="/pokemon/<%=i%>/edit">Edit Pokemon</a>
+   
 </body>
 </html>
