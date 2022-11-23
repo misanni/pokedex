@@ -5,31 +5,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style type="text/css">
-      body {
-        color: blanchedalmond;
-        background-color: steelblue;
-        text-align: center;
-        font-family: cursive;
-      }
-    </style>
+    
 </head>
 <body>
+  <center>
     <h1>Pokedex</h1>
-    <h2> <%= pokemonname %></h2> 
+    <h2>POKEMON NAME:  <%= pokemonname %></h2> 
     <br>
   
    
-    <button><a href="/pokemon">Return to Pokedex Entries</a></button>
-    <img src='<%=pokemonimg %>' alt=“pokemonimg”> <h3><%=pokemontype %> </h3>
+    <button><a href="/pokemon">Return to Pokedex Entries</a></button><br><br>
+    <img style="border-radius:25%;box-shadow:2px 2px 20px 1px rgb(15 0 4 / 78%);" src='<%=pokemonimg %>' alt=“pokemonimg”> 
+    <h3>TYPE: <%=pokemontype %> </h3>
     
-   
+   <br>
      
      <form action="/pokemon/<%=i; %>?_method=DELETE" method="POST">
       <input type="submit" value="DELETE" />   
-
+    
     </form>
     <a href="/pokemon/<%=i%>/edit">Edit Pokemon</a>
-   
+  </center>
 </body>
 </html>

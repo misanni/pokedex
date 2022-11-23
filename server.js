@@ -22,7 +22,11 @@ app.get('/pokemon', (request, response)=>{
 //});
 
 app.get('/pokemon/:id', (request, response)=>{
-    response.render("show.ejs",{i:request.params.id,pokemonname : pokemon[request.params.id].name, pokemonimg:pokemon[request.params.id].img, pokemontype:pokemon[request.params.id].type })
+    response.render("show.ejs",{i:request.params.id,
+         pokemonname : pokemon[request.params.id].name,
+         pokemonimg:pokemon[request.params.id].img,
+          pokemontype:pokemon[request.params.id].type});
+           
 });
 
 app.get('/pokemons/new', (request, response)=>{
@@ -31,13 +35,18 @@ app.get('/pokemons/new', (request, response)=>{
 
 });
 app.get('/pokemon/:id/edit',(request, response)=>{
-response.render("edit.ejs",{i:request.params.id,pokemonname : pokemon[request.params.id].name, pokemonimg:pokemon[request.params.id].img, pokemontype:pokemon[request.params.id].type, pokemonid:pokemon[request.params.id].id })
+response.render("edit.ejs",{i:request.params.id,
+    pokemonname : pokemon[request.params.id].name, 
+    pokemonimg:pokemon[request.params.id].img, 
+    pokemontype:pokemon[request.params.id].type, 
+    pokemonid:pokemon[request.params.id].id});
+    
 });
 
 app.post('/pokemon', (request, response)=>{
     console.log(request.body);
     pokemon.push(request.body);
-   
+    
     response.redirect("/pokemon");
 });
 

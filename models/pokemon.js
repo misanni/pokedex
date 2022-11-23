@@ -8,7 +8,12 @@ const pokemon=[
           "Grass",
           "Poison"
         ],
+        stats: {
+          hp: "45",
+          attack: "49",
+          defense: "49"},
     },
+    
     {
         id: "002",
         name: "Ivysaur",
@@ -17,16 +22,23 @@ const pokemon=[
           "Grass",
           "Poison"
         ],
+        stats: {
+          hp: "60",
+          attack: "62",
+          defense: "63"}
     },
     {
-        id: "002",
-        name: "Ivysaur",
-        img: "http://img.pokemondb.net/artwork/ivysaur.jpg",
-        type: [
-          "Grass",
-          "Poison"
-        ],
-  
+      id: "003",
+      name: "Venusaur",
+      img: "http://img.pokemondb.net/artwork/venusaur.jpg",
+      type: [
+        "Grass",
+        "Poison"
+      ],
+      stats: {
+        hp: "80",
+        attack: "82",
+        defense: "83"},
     },
   
   {
@@ -36,6 +48,10 @@ const pokemon=[
     type: [
       "Fire"
     ],
+    stats: {
+      hp: "39",
+      attack: "52",
+      defense: "43"},
   },
   
   {
@@ -45,6 +61,10 @@ const pokemon=[
     type: [
       "Fire"
     ],
+    stats: {
+      hp: "58",
+      attack: "64",
+      defense: "58"},
   },
   
   {
@@ -55,6 +75,10 @@ const pokemon=[
       "Fire",
       "Flying"
     ],
+    stats: {
+      hp: "78",
+      attack: "84",
+      defense: "78"},
   },
   {
     id: "007",
@@ -63,6 +87,10 @@ const pokemon=[
     type: [
       "Water"
     ],
+    stats: {
+      hp: "44",
+      attack: "48",
+      defense: "65"},
   },
   {
     id: "008",
@@ -71,6 +99,10 @@ const pokemon=[
     type: [
       "Water"
     ],
+    stats: {
+      hp: "59",
+      attack: "63",
+      defense: "80"},
   },
   {
     id: "009",
@@ -79,6 +111,10 @@ const pokemon=[
     type: [
       "Water"
     ],
+    stats: {
+      hp: "79",
+      attack: "83",
+      defense: "100"},
   },
   {
     id: "010",
@@ -87,6 +123,10 @@ const pokemon=[
     type: [
       "Bug"
     ],
+    stats: {
+      hp: "45",
+      attack: "30",
+      defense: "35"},
   },
   {
     id: "011",
@@ -95,6 +135,10 @@ const pokemon=[
     type: [
       "Bug"
     ],
+    stats: {
+      hp: "50",
+      attack: "20",
+    defense: "55"},
   },
   {
     id: "013",
@@ -104,6 +148,10 @@ const pokemon=[
       "Bug",
       "Poison"
     ],
+    stats: {
+      hp: "50",
+      attack: "20",
+      defense: "30"},
   },
   {
     id: "014",
@@ -113,6 +161,10 @@ const pokemon=[
       "Bug",
       "Poison"
     ],
+    stats: {
+      hp: "45",
+      attack: "25",
+      defense: "50"},
   },
   {
     id: "015",
@@ -122,6 +174,10 @@ const pokemon=[
       "Bug",
       "Poison"
     ],
+    stats: {
+      hp: "65",
+      attack: "80",
+      defense: "48"},
   },
   {
     id: "016",
@@ -131,6 +187,10 @@ const pokemon=[
       "Normal",
       "Flying"
     ],
+    stats: {
+      hp: "40",
+      attack: "45",
+      defense: "40"},
   },
   {
     id: "017",
@@ -140,6 +200,10 @@ const pokemon=[
       "Normal",
       "Flying"
     ],
+    stats: {
+      hp: "63",
+      attack: "60",
+      defense: "55"},
   },
   {
     id: "018",
@@ -149,6 +213,10 @@ const pokemon=[
       "Normal",
       "Flying"
     ],
+    stats: {
+      hp: "83",
+      attack: "80",
+      defense: "75"},
   },
   {
     id: "019",
@@ -157,6 +225,10 @@ const pokemon=[
     type: [
       "Normal"
     ],
+    stats: {
+      hp: "30",
+      attack: "56",
+      defense: "35"},
   },
   {
     id: "020",
@@ -164,7 +236,12 @@ const pokemon=[
     img: "http://img.pokemondb.net/artwork/raticate.jpg",
     type: [
       "Normal"
-    ],},
+    ],
+    stats: {
+      hp: "55",
+      attack: "81",
+      defense: "60"},
+  },
     {
         id: "021",
         name: "Spearow",
@@ -172,7 +249,12 @@ const pokemon=[
         type: [
           "Normal",
           "Flying"
-        ],},
+        ],
+        stats: {
+          hp: "40",
+          attack: "60",
+          defense: "30"},
+      },
         {
             id: "022",
             name: "Fearow",
@@ -180,7 +262,12 @@ const pokemon=[
             type: [
               "Normal",
               "Flying"
-            ],},
+            ],
+            stats: {
+              hp: "65",
+              attack: "90",
+              defense: "65"},
+          },
             
   ]
   module.exports=pokemon
